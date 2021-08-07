@@ -184,6 +184,9 @@ requirementsTask() {
     sleep 3
   done
 
+  echo -e "\n${GREEN}[+]${NC} Installing nmap..."
+  apt install nmap
+
   echo -e "\n${GREEN}[+]${NC} Installing RustScan by RustScan..."
   cd "/tmp"
   curl -s https://github.com/RustScan/RustScan/releases/latest \
@@ -196,8 +199,6 @@ requirementsTask() {
 | xargs -n 1 dpkg -i
   cd "$huntitDIR"
 
-  echo -e "\n${GREEN}[+]${NC} Installing nmap..."
-  apt install nmap
 }
 
 finalInformationsTask() {
