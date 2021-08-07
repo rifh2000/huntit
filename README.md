@@ -1,6 +1,6 @@
 ## Huntit
 
-This is a supposed to be a fast WebSec automation tool that I'm developing on the weekends to help with a few things:
+This is supposed to be a fast WebSec automation tool that I'm developing on the weekends to help with a few things:
 
 - Finds alive subdomains;
 - Removes out-of-scope subdomains;
