@@ -301,20 +301,20 @@ finalInformationsTask() {
 huntit() {
   mkdirectoriesTask # <- This function needs to stay always ON
   # ------------------------------------------------------------------
-  # assetfinderTask
-  # httprobeTask
-  # gowitnessTask
-  # waybackurlsTask
-  # paramspiderTask
-  # processingWaybackdataTask
-  # parseSitemapXML
-  # gf_xssTask
-  # GxssTask
-  # gf_redirectTask
-  # redirectPayloadGeneratorTask
-  # megTask
-  # dalfoxGxssTask
-  # dalfoxRedirectTask
+  assetfinderTask
+  httprobeTask
+  gowitnessTask
+  waybackurlsTask
+  paramspiderTask
+  processingWaybackdataTask
+  parseSitemapXML
+  gf_xssTask
+  GxssTask
+  gf_redirectTask
+  redirectPayloadGeneratorTask
+  megTask
+  dalfoxGxssTask
+  dalfoxRedirectTask
   # ------------------------------------------------------------------
   #@> EXTRA TOOLS (After running the functions above, comment them out before running extras)
   # ffufCustomDirectoriesTask
