@@ -11,7 +11,7 @@ This is supposed to be a fast WebSec automation tool that I'm developing on the 
 - Generates a custom directory wordlist specific to your target;
 - Generates a custom parameter wordlist specific to your target;
 - Greps for "XSS" patterns;
-- Checks for reflected paramters;
+- Checks for reflected parameters;
 - Greps for "Open Redirect" patterns;
 - Generates "Open Redirect" payloads specific to each host;
 - Tests for "XSS" vulnerabilities;
@@ -19,7 +19,7 @@ This is supposed to be a fast WebSec automation tool that I'm developing on the 
 
 #### Extra Functions (takes longer to run depending on the target):
 
-- Burteforces Directories/Paths;
+- Bruteforces Directories/Paths;
 - Scan Ports really fast.
 
 ## Installation
