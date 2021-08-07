@@ -1,7 +1,0 @@
-lang
-pair
-start_time
-top-bar
-utm_source
-v
-version
