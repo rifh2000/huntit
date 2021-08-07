@@ -33,7 +33,7 @@ After installation is completed and you change your mind about where the Huntit 
 
 ## Usage
 
-```bash
+```
 Usage:
    Required: Input the top level domain and your blind payload from https://xsshunter.com
    Optional: Input an out-of-scope subdomain list and an in-scope subdomain list
