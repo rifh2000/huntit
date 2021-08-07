@@ -27,11 +27,6 @@ This is supposed to be a fast WebSec automation tool that I'm developing on the 
 In the linux shell, navigate to where you cloned the Huntit repository, then run the following command: <br>
 ```./huntitRequirements.sh -i```
 
-You will need to install the "Rust Scan" third party tool manually: <br>
-Download the .deb file from the releases page below. <br>
-https://github.com/RustScan/RustScan/releases
-<br>Run the command ```dpkg -i``` on the file.
-
 After installation is completed and you change your mind about where the Huntit repository should <br> be kept on your computer, you can update its location on the PATH Environment using the following command: <br>
 ```./huntitRequirements.sh -p```
 

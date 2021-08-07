@@ -45,7 +45,7 @@ pathWriterTask() {
   echo -e "\n${GREEN}[+]${NC} Adding huntit aliases to ~/.zshrc and ~/.bashrc ..."
   echo -e "\n# HUNTIT ALIAS PATH" >> ~/.zshrc
   echo "alias huntit=$huntitDIR/huntit.sh" >> ~/.zshrc
-  eco -e "\n# HUNTIT ALIAS PATH" >> ~/.bashrc
+  echo -e "\n# HUNTIT ALIAS PATH" >> ~/.bashrc
   echo "alias huntit=$huntitDIR/huntit.sh" >> ~/.bashrc
 }
 
@@ -183,6 +183,18 @@ requirementsTask() {
     echo -e "\n${RED}[!]${NC} Retrying installation..."
     sleep 3
   done
+
+  echo -e "\n${GREEN}[+]${NC} Installing RustScan by RustScan..."
+  cd "/tmp"
+  curl -s https://github.com/RustScan/RustScan/releases/latest \
+| sed 's/.*a href="//; s/">.*//' \
+| xargs -n 1 curl \
+| grep '/RustScan/RustScan/.*amd64\.deb' \
+| sed 's/.*href="/https\:\/\/github.com/; s/" rel=.*//' \
+| wget -qi -
+  find /tmp -regex '.*rustscan.*' \
+| xargs -n 1 dpkg -i
+  cd "$huntitDIR"
 
   echo -e "\n${GREEN}[+]${NC} Installing nmap..."
   apt install nmap
