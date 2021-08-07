@@ -137,6 +137,14 @@ requirementsTask() {
   done
 
   until [ "$retries" -ge 500 ]; do
+    echo -e "\n${GREEN}[+]${NC} Installing httpx by projectdiscovery..."
+    GO111MODULE=on /$HOME/go/bin/go get -v github.com/projectdiscovery/httpx/cmd/httpx && break
+    retries=$((retries+1))
+    echo -e "\n${RED}[!]${NC} Retrying installation..."
+    sleep 2
+  done
+
+  until [ "$retries" -ge 500 ]; do
     echo -e "\n${GREEN}[+]${NC} Installing Gxss KathanP19..."
     /$HOME/go/bin/go get -u github.com/KathanP19/Gxss && break
     retries=$((retries+1))
@@ -155,6 +163,14 @@ requirementsTask() {
   until [ "$retries" -ge 500 ]; do
     echo -e "\n${GREEN}[+]${NC} Installing gron by tomnomnom..."
     /$HOME/go/bin/go get -u github.com/tomnomnom/gron && break
+    retries=$((retries+1))
+    echo -e "\n${RED}[!]${NC} Retrying installation..."
+    sleep 3
+  done
+
+  until [ "$retries" -ge 500 ]; do
+    echo -e "\n${GREEN}[+]${NC} Installing meg by tomnomnom..."
+    /$HOME/go/bin/go get -u github.com/tomnomnom/meg && break
     retries=$((retries+1))
     echo -e "\n${RED}[!]${NC} Retrying installation..."
     sleep 3
